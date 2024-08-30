@@ -1,7 +1,9 @@
 function WeatherIcon({ iconNumber, summary }) {
   return (
     <img
-      src={`/dist/weather_icons/set04/big/${iconNumber}.png`}
+      src={`${
+        import.meta.env.BASE_URL
+      }dist/weather_icons/set04/big/${iconNumber}.png`}
       alt={summary}
       draggable={false}
     />
